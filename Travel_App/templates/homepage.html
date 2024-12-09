@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'homepage.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav__menu">
+            <a id="selected" href="./homepage.html">Home</a>
+            <a href="./Messages.html">Messages</a>
+            <a href="./settings.html">Settings</a>
+        </div>
+        <div class="nav__menu link">
+            <a href="">[First Name]</a>
+            <a href="">|</a>
+            <a href="./upgrad.html">Upgrade</a>
+            <a href="">|</a>
+            <a href="./login1.html">Sign out</a>
+            <img src="https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg" alt="profile">
+        </div>
+    </nav>
+    <!-- Stories Section-->
+     <br> 
+    <div class="container">
+       <h2>Stories</h2>
+        <!--<div class="stories">
+            {% for story in stories %}
+            <div class="story">
+                <img src="{{ story.image.url }}" alt="Story">
+            </div>
+            {% endfor %}
+         </div>
+
+    <br>-->
+    <!-- Posts Section 
+    <div class="container2">
+         <div class="posts">
+            <h2>Posts</h2>
+            {% for post in posts %}
+            <div class="post">
+                <img src="{{ post.image.url }}" alt="Post">
+                <p>{{ post.caption }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>-->
+    </div>
+</body>
+</html>
