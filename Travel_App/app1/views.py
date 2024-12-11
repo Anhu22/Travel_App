@@ -40,3 +40,6 @@ def index(request):
 def show(request):
     persons = person.find()
     return persons
+
+def message(request):
+    return render(request,'Messages.html')

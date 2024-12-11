@@ -9,5 +9,6 @@ urlpatterns = [
     path('sign.html', views.sign, name="signup"),
     path('index/',views.index),
     path('show/',views.show),  # Changed to a more RESTful URL
-    path('homepage.html', views.home, name="homepage"),  # Changed to a more RESTful URL
+    path('homepage.html', views.home, name="homepage"), 
+    path('Messages.html',views.message, name="Message") # Changed to a more RESTful URL
 ]
