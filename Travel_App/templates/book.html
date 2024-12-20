@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages</title>
+    <title>Hotel Booking</title>
     {% load static %} 
-    <link rel="stylesheet" href="{% static 'Messages.css' %}">
+    <link rel="stylesheet" href="{% static 'book.css' %}">
     <style>
-         h1 {
+        h2 {
+            position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-h3 {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.book {
+.bookyes {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffcc00; /* Button background color */
+    color: #333; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 50vh; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size for the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .bookyes:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+  }
+  .bookno {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,13 +49,13 @@ h3 {
     transition: background-color 0.3s; /* Smooth background color transition */
   }
   
-  .book:hover {
+  .bookno:hover {
     background-color: #e6b800; /* Darker shade on hover */
   }
     </style>
 </head>
+
 <body>
-    <!--===========Nav Bar=================-->
     <section class="nav-bar">
         <div class="logo"></div>
         <ul class="menu">
@@ -61,12 +78,7 @@ h3 {
             <li><a href="#">contact us</a></li-->
         </ul>
     </section>
-    <!--==============ERROR===================-->
-        <br>
-        <h1>You haven't booked a Package</h1>
-        <br>
-        <h3>Book a package to start the chat</h3>
-        <br>
-        <a href="package.html" class="book"> Book</a>
+    <h2>Do You Want to Proceed to Payment?</h2>
+    <a href="payment.html" class="bookyes"> Yes </a>
+    <a href="homepage.html" class="bookno"> No </a>
 </body>
-</html>

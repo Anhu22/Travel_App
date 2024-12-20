@@ -1,3 +1,6 @@
+/* booking.css */
+
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
@@ -113,30 +116,3 @@ ul.menu {
 .dropdown .drop a:hover {
     background-color: #f1f1f1;
 }
-
-h1 {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h3 {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.book {
-    background-color: #ffcc00; /* Button background color */
-    color: #333; /* Button text color */
-    padding: 10px 20px; /* Padding for the button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    justify-content: center;
-    align-items: center;
-    font-size: 1em; /* Font size for the button */
-    transition: background-color 0.3s; /* Smooth background color transition */
-  }
-  
-.book:hover {
-    background-color: #e6b800; /* Darker shade on hover */
-  }

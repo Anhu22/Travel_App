@@ -3,25 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages</title>
+    <title>Train Booking</title>
     {% load static %} 
-    <link rel="stylesheet" href="{% static 'Messages.css' %}">
+    <link rel="stylesheet" href="{% static 'hotels.css' %}">
     <style>
-         h1 {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h3 {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.book {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    .book {
     background-color: #ffcc00; /* Button background color */
     color: #333; /* Button text color */
     padding: 10px 20px; /* Padding for the button */
@@ -61,12 +47,38 @@ h3 {
             <li><a href="#">contact us</a></li-->
         </ul>
     </section>
-    <!--==============ERROR===================-->
-        <br>
-        <h1>You haven't booked a Package</h1>
-        <br>
-        <h3>Book a package to start the chat</h3>
-        <br>
-        <a href="package.html" class="book"> Book</a>
-</body>
-</html>
+    <!--========Body==============-->
+    <section class="places">
+        <div class="places-text">
+            <br>
+            <h2>Trains</h2>
+            <br>
+        </div>
+    
+        <div class="cards">
+            <div class="card">
+                          
+                <div class="text">
+                    
+                    <h2>Lalbagh Exp (12608)</h2>
+                    <p>Cost : Rs.650/Person</p>
+                    <p class="time">Time:🕓 5 hours 45 minutes</p>
+                    <p class="time">Departure Time:🕓 6:30 AM</p>
+                        <p class="time">From: ✈ KSR,Bengaluru</p>
+                        <p class="location">To: ✈ MGR Chennai Central, Chennai</p>                   <a href="book.html" class="book"> Book</a>
+                </div>
+            </div>
+            
+    
+            <div class="card">
+                          
+                <div class="text">
+                    
+                    <h2>Brindavan Exp (12608)</h2>
+                    <p>Cost : Rs.650/Person</p>
+                    <p class="time">Time:🕓 5 hours 40 minutes</p>
+                    <p class="time">Departure Time:🕓 2:15 PM</p>
+                        <p class="time">From: ✈ KSR,Bengaluru</p>
+                        <p class="location">To: ✈ MGR Chennai Central, Chennai</p>                   <a href="book.html" class="book"> Book</a>
+                </div>
+            </div>

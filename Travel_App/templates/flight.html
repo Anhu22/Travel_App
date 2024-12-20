@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'flight.css' %}">
+    <style>
+    .book {
+    background-color: #ffcc00; /* Button background color */
+    color: #333; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 50vh; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size for the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .book:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+  }
+    </style>
+</head>
+<body>
+    <!--===========Nav Bar=================-->
+    <section class="nav-bar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="homepage.html">home</a></li>
+            <!--li><a href="#">tours</a></li-->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href= "booking.html">BOOKING</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="drop contains">
+                    <a href="hotels.html">Hotels</a>
+                    <a href="trains.html">Trains</a>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <li><a href="Messages.html">Messages</a></li>
+            <li><a href="package.html">package</a></li>
+            <!--li><a href="blog.html">blog</a></li>
+            <li><a href="#">contact us</a></li-->
+        </ul>
+    </section>
+    <!--========Body==============-->
+    <section class="places">
+        <div class="places-text">
+            <br>
+            <h2>FLIGHTS</h2>
+            <br>
+        </div>
+    
+        <div class="cards">
+            <div class="card">
+                          
+                <div class="text">
+                    
+                    <h2>Lufthansa</h2>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Economy</p>
+                    <p>Cost : Rs.90,000/Person</p>
+                    <p class="time">Time:🕓 14 hours 50 minutes</p>
+                        <p class="time">From: ✈ Delhi, India</p>
+                        <p class="location">To: ✈ Vancouver, Canada</p>
+                    <a href="book.html" class="book"> Book</a>
+                </div>
+            </div>
+            
+    
+            <div class="card">
+                <div class="text">
+                    
+                    <h2>Lufthansa</h2>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Business Class</p>
+                    <p>Cost : Rs.3,00,000/Person</p>
+                    <p class="time">Time:🕓 14 hours 50 minutes</p>
+                        <p class="time">From: ✈ Delhi, India</p>
+                        <p class="location">To: ✈ Vancouver, Canada</p>
+                    <a href="book.html" class="book"> Book</a>
+                </div>
+            </div>
+            
+            <div class="card">
+            <div class="text">
+                <h2>Japan Airlines</h2>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+                <p>Economy</p>
+                <p>Cost : Rs.1,20,000/Person</p>
+                <p class="time">Time:🕓 7 hours 30 minutes</p>
+                    <p class="time">From: ✈ Delhi, India</p>
+                    <p class="location">To: ✈ Tokyo, Japan</p>
+                <a href="book.html" class="book"> Book</a>
+            </div>
+            
+        </div>
+            <div class="card">
+            <div class="text">
+               
+                <h2>Japan Airlines</h2>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+                <p>Business Class</p>
+                <p>Cost : Rs.5,50,000/Person</p>
+                <p class="time">Time:🕓 8 hours 30 minutes</p>
+                    <p class="time">From: ✈ Mumbai, India</p>
+                    <p class="location">To: ✈ Tokyo, Japan</p>
+                <a href="book.html" class="book"> Book</a>
+            </div>
+            </div>
+    
+            <div class="card">
+                <div class="text">
+                    <h2>Japan Airlines</h2>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <p>Economy </p>
+                    <p>Cost : Rs.1,00,000/Person</p>
+                    <p class="time">Time:🕓 8 hours 30 minutes</p>
+                        <p class="time">From: ✈ Mumbai, India</p>
+                        <p class="location">To: ✈ Tokyo, Japan</p>
+                    <a href="book.html" class="book"> Book</a>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </body>
+    </html>
