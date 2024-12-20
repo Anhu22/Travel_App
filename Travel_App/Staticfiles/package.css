@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll Bar Styles */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fde65e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #fde02f;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    font-family: 'Satisfy', cursive; /* Added cursive fallback */
+}
+
+ul.menu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none; /* Moved here for clarity */
+}
+
+.menu li {
+    flex: 1;
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif; /* Added sans-serif fallback */
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px; /* Added padding for better click area */
+    display: block; /* Ensures the entire area is clickable */
+}
+
+.menu li a:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background-color: inherit;
+    color: #000;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown .drop {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .drop {
+    display: block;
+}
+
+.dropdown .drop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown .drop a:hover {
+    background-color: #f1f1f1;
+}
+
+places-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .places-text small {
+    font-family: Roboto;
+    color: #ffc342;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+  .places-text h2 {
+    font-family: Barlow Condensed;
+    font-size: 55px;
+    color: #191d34;
+    letter-spacing: 1px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .card {
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 80%;
+    height: auto;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .cards .text {
+    padding: 20px;
+    font-family: Barlow Condensed;
+    line-height: 50px;
+  }
+  
+  .cards .card-box {
+    display: flex;
+    flex-flow: row;
+    background-color: #fde02f;
+    font-size: 18px;
+    font-family: Roboto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cards .time {
+    flex: 1;
+  }
+  
+  .cards .location {
+    flex: 2;
+  }
+  
+  .cards .cost {
+    color: #4cafad;
+    font-size: 20px;
+  }
+  
+  /*------------Zoom in Photos--------------*/
+  .zoom-img {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  .zoom-img .img-card {
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .img-card img {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  
+  .card:hover .zoom-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  

@@ -43,3 +43,13 @@ def show(request):
 
 def message(request):
     return render(request,'Messages.html')
+
+def booking(request):
+    return render(request,'booking.html')
+
+def blog(request):
+    return render(request,'blog.html')
+
+def pack(request):
+    return render(request,'package.html')
+

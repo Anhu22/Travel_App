@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'booking.css' %}">
+</head>
+<body>
+    <!--===========Nav Bar=================-->
+    <section class="nav-bar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="homepage.html">home</a></li>
+            <!--li><a href="#">tours</a></li-->
+            <div class="dropdown">
+                <button class="dropbtn">BOOKING
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="drop contains">
+                    <a href="#">Hotels</a>
+                    <a href="#">Trains</a>
+                    <a href="#">Flights</a>
+                </div>
+            </div>
+            <li><a href="Messages.html">Messages</a></li>
+            <li><a href="package.html">package</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <!--li><a href="#">contact us</a></li-->
+        </ul>
+    </section>
+    <!--==============DropDown box===================-->
+</body>
+</html>

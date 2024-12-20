@@ -10,5 +10,8 @@ urlpatterns = [
     path('index/',views.index),
     path('show/',views.show),  # Changed to a more RESTful URL
     path('homepage.html', views.home, name="homepage"), 
-    path('Messages.html',views.message, name="Message") # Changed to a more RESTful URL
+    path('Messages.html',views.message, name="Message"),
+    path('booking.html',views.booking,name="Booking Page"),
+    path('blog.html',views.blog,name = "Blog"),
+    path('package.html',views.pack,name = "Package")
 ]
